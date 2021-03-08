@@ -4,7 +4,11 @@
 
 ### Project structure:
 
+- Create homepage
+
 ### Features:
+
+- Create tech-stack component/s
 
 ### Mobile:
 
@@ -12,7 +16,6 @@
 
 ### Project structure:
 
-- Create homepage
 - Create experience page
 - Create contact page
 - ???
@@ -20,7 +23,6 @@
 ### Features:
 
 - Create hamburger menu
-- Create tech-stack component/s
 - Create slider component
 - Create contact form
 - Make contact form validation
