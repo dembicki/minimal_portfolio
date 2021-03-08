@@ -1,14 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.header``;
+const Wrapper = styled.header`
+  margin: 0;
+`;
 
 const Heading = styled.h1`
   font-size: 3.7rem;
   text-align: left;
+  margin: 0;
 `;
 
 const Description = styled.p`
+  margin: 1rem 0;
   font-size: 1.4rem;
   text-align: left;
   line-height: 2.1rem;
