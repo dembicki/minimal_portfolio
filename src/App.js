@@ -1,15 +1,17 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import './App.scss';
-import SectionWrapper from './components/SectionWrapper';
+import MainWrapper from './components/MainWrapper';
+import Header from './components/Header';
+import Menu from './components/Menu';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello world</h1>
-      <SectionWrapper />
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <MainWrapper>
+      <Header />
+      <Menu />
+    </MainWrapper>
+  </div>
+);
 
 export default App;
