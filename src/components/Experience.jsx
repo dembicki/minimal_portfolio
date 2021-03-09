@@ -50,13 +50,10 @@ export default function Experience() {
     },
   ];
 
-  // const handleChange = (e) => {};
-
   return (
     <Wrapper>
       <Chrono
         mode="VERTICAL"
-        scrollable={{ scrollbar: false }}
         hideControls
         theme={{
           primary: "white",

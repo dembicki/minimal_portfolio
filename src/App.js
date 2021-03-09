@@ -7,6 +7,7 @@ import Menu from './components/Menu';
 import SectionWrapper from './components/SectionWrapper';
 import TechStack from './components/TechStack';
 import Experience from './components/Experience';
+import Contact from './components/Contact';
 
 const App = () => (
   <div className="App">
@@ -22,7 +23,7 @@ const App = () => (
         <Experience />
       </SectionWrapper>
       <SectionWrapper title="Contact" id="contact">
-        <p>This is contact sections</p>
+        <Contact />
       </SectionWrapper>
     </MainWrapper>
   </div>
