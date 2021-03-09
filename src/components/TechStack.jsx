@@ -18,7 +18,7 @@ export default function TechStack() {
 
   const Wrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 1rem;
   `;
