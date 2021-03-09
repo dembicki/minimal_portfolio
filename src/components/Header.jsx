@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.header`
   margin: 0;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 `;
 
 const Heading = styled.h1`
@@ -30,9 +30,9 @@ export default function Header() {
       <Description>
         Web Developer currently working at LPNPLANT. The real passionate of
         modern web technologies. I would like to push my career path into
-        developing web appliactions with <span>React</span>. Futhermore, I’m
-        open to learn and discover some new javascript based frameworks.
-        Currently learning Next.js and Typescript basics.
+        developing web appliactions with React. Futhermore, I’m open to learn
+        and discover some new javascript based frameworks. Currently learning
+        Next.js and Typescript basics.
         <br />
         <br />
         If you have any questions please <span>contact me.</span>

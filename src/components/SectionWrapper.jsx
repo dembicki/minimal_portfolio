@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export default function SectionWrapper({ children, title, id, minHeight }) {
   const Wrapper = styled.section`
+    padding-top: 2rem;
     max-width: 1200px;
     min-height: 100vh;
     min-height: ${minHeight};
