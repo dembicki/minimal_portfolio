@@ -36,9 +36,9 @@ export default function Experience() {
           primary: "white",
           secondary: "black",
           cardBgColor: "transparent",
-          cardForeColor: "violet",
         }}
       >
+        {/* TODO: fix elements nasted */}
         {experience.map((item) => (
           <CardWrapper>
             <JobTitle>{item.jobTitle}</JobTitle>
