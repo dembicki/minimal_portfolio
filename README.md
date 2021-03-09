@@ -29,6 +29,7 @@
 - Add animations
 - Add mouse hover effect
 - Improvements?
+- Move all data/content to json files
 
 ### Mobile:
 
