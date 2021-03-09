@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import user from "../data/user";
+
 const Wrapper = styled.header`
   margin: 0;
   margin-bottom: 2rem;
@@ -26,13 +28,12 @@ const Description = styled.p`
 export default function Header() {
   return (
     <Wrapper>
-      <Heading>Damian Dembicki</Heading>
+      <Heading>
+        {user.firstName} {user.lastName}
+      </Heading>
       <Description>
-        Web Developer currently working at LPNPLANT. The real passionate of
-        modern web technologies. I would like to push my career path into
-        developing web appliactions with React. Futhermore, I’m open to learn
-        and discover some new javascript based frameworks. Currently learning
-        Next.js and Typescript basics.
+        {user.position} currently working at {user.currentCompany}. <br />
+        {user.description}
         <br />
         <br />
         If you have any questions please <span>contact me.</span>

@@ -3,6 +3,8 @@ import React from "react";
 import { Chrono } from "react-chrono";
 import styled from "styled-components";
 
+import experience from "../data/experience";
+
 export default function Experience() {
   const Wrapper = styled.div`
     padding: 0;
@@ -25,31 +27,6 @@ export default function Experience() {
     line-height: 2rem;
   `;
 
-  const items = [
-    {
-      jobTitle: "Junior Frontend Developer",
-      companyName: "LPN PLANT, March 2020 - Present",
-      Description: [
-        "Developing dashboard for wireless managing outdoor lights installations using React Postgres, GraphQL, Ant Design, Nodejs with schedule planning integration and data analytics.",
-        "Developing dashboard for IoT data analytics using Cube.js, React, GraphQL, Nodejs",
-        "Rebranding existing client’s landing pages",
-        "Doing researches for potencial project tech stack based on customer needs",
-        "Managing small webdev team for some time.",
-      ],
-    },
-    {
-      jobTitle: "Junior Frontend Developer",
-      companyName: "LPN PLANT, March 2020 - Present",
-      Description: [
-        "Developing dashboard for wireless managing outdoor lights installations using React Postgres, GraphQL, Ant Design, Nodejs with schedule planning integration and data analytics.",
-        "Developing dashboard for IoT data analytics using Cube.js, React, GraphQL, Nodejs",
-        "Rebranding existing client’s landing pages",
-        "Doing researches for potencial project tech stack based on customer needs",
-        "Managing small webdev team for some time.",
-      ],
-    },
-  ];
-
   return (
     <Wrapper>
       <Chrono
@@ -62,7 +39,7 @@ export default function Experience() {
           cardForeColor: "violet",
         }}
       >
-        {items.map((item) => (
+        {experience.map((item) => (
           <CardWrapper>
             <JobTitle>{item.jobTitle}</JobTitle>
             <CompanyName>{item.companyName}</CompanyName>

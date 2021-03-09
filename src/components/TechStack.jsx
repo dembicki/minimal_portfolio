@@ -2,20 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Tile from "./Tile";
 
-export default function TechStack() {
-  const skills = [
-    "react.js",
-    "js es6",
-    "less/sass",
-    "graphql",
-    "node.js",
-    "typescript",
-    "docker",
-    "redux",
-    "postgres",
-    "gatsby",
-  ];
+import stack from "../data/stack";
 
+export default function TechStack() {
   const Wrapper = styled.div`
     display: flex;
     justify-content: flex-start;
@@ -25,7 +14,7 @@ export default function TechStack() {
 
   return (
     <Wrapper>
-      {skills ? skills.map((e) => <Tile key={e} label={e} />) : null}
+      {stack ? stack.map((e) => <Tile key={e} label={e} />) : null}
     </Wrapper>
   );
 }
