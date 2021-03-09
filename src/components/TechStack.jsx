@@ -9,18 +9,18 @@ export default function TechStack() {
     "less/sass",
     "graphql",
     "node.js",
-    // "typescript",
-    // "docker",
-    // "redux",
-    // "postgres",
-    // "gatsby",
+    "typescript",
+    "docker",
+    "redux",
+    "postgres",
+    "gatsby",
   ];
 
   const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 1rem;
   `;
 
   return (

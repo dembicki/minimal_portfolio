@@ -7,6 +7,8 @@ export default function Tile({ label }) {
     width: 150px;
     height: 150px;
     display: flex;
+    justify-content: space-between;
+    margin: 2rem;
   `;
 
   const Front = styled.div`
@@ -17,6 +19,12 @@ export default function Tile({ label }) {
     position: absolute;
     background-color: black;
     top: 0;
+    transition: transform ease-in-out 0.3s;
+    &:hover {
+      transform: translate(10px, 10px);
+      transition: transform ease-in-out 0.3s;
+      cursor: pointer;
+    }
   `;
 
   const Back = styled.div`
@@ -28,7 +36,7 @@ export default function Tile({ label }) {
     top: 0;
     z-index: -1;
     position: absolute;
-    transform: translate(15px, 15px);
+    transform: translate(10px, 10px);
   `;
 
   const Label = styled.span`
@@ -44,8 +52,9 @@ export default function Tile({ label }) {
 
   return (
     <Wrapper>
-      <Label>{label}</Label>
-      <Front />
+      <Front>
+        <Label>{label}</Label>
+      </Front>
       <Back />
     </Wrapper>
   );

@@ -6,14 +6,23 @@ import Header from './components/Header';
 import Menu from './components/Menu';
 import SectionWrapper from './components/SectionWrapper';
 import TechStack from './components/TechStack';
+import Experience from './components/Experience';
 
 const App = () => (
   <div className="App">
     <MainWrapper>
-      <Header />
+      <a href="#experience">exp</a>
+      <a href="#contact">contact</a>
       <Menu />
-      <SectionWrapper title="Tech stack">
+      <Header />
+      <SectionWrapper title="Tech stack" minHeight="60vh">
         <TechStack />
+      </SectionWrapper>
+      <SectionWrapper title="Experience" id="experience">
+        <Experience />
+      </SectionWrapper>
+      <SectionWrapper title="Contact" id="contact">
+        <p>This is contact sections</p>
       </SectionWrapper>
     </MainWrapper>
   </div>

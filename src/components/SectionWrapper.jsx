@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function SectionWrapper({ children, title }) {
+export default function SectionWrapper({ children, title, id, minHeight }) {
   const Wrapper = styled.section`
     max-width: 60%;
+    min-height: 100vh;
+    min-height: ${minHeight};
   `;
   const Heading = styled.h2`
     font-size: 30px;
@@ -12,7 +14,7 @@ export default function SectionWrapper({ children, title }) {
   `;
 
   return (
-    <Wrapper>
+    <Wrapper id={id}>
       <Heading>{`${title}:`}</Heading>
       {children}
     </Wrapper>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.header`
   margin: 0;
+  margin-bottom: 4rem;
 `;
 
 const Heading = styled.h1`
