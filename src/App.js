@@ -12,12 +12,10 @@ import Arrow from './components/Arrow';
 
 const App = () => (
   <div className="App">
-    <MainWrapper>
-      <a href="#experience">exp</a>
-      <a href="#contact">contact</a>
+    <MainWrapper id="top">
       <Menu />
       <Header />
-      <Arrow />
+      {/* <Arrow /> */}
       <SectionWrapper title="Tech stack" minHeight="60vh">
         <TechStack />
       </SectionWrapper>

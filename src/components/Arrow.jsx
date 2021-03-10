@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 export default function Arrow({ size }) {
-  const [direction, setDirection] = useState("down");
+  const [direction, setDirection] = useState("up");
 
   const arrSize = size || "4rem";
 
@@ -21,12 +21,18 @@ export default function Arrow({ size }) {
     color: black;
     font-weight: bold;
     cursor: pointer;
+    a {
+      text-decoration: none;
+      color: black;
+    }
   `;
 
   return (
     <a href="#experience">
       <Wrapper>
-        {direction === "up" ? <span>&uarr;</span> : <span>&darr;</span>}
+        <a href="#top">
+          {direction === "up" ? <span>&uarr;</span> : <span>&darr;</span>}
+        </a>
       </Wrapper>
     </a>
   );

@@ -7,6 +7,6 @@ const Wrapper = styled.main`
   height: calc(100vh-padding);
 `;
 
-export default function MainWrapper({ children }) {
-  return <Wrapper>{children}</Wrapper>;
+export default function MainWrapper({ children, id }) {
+  return <Wrapper id={id}>{children}</Wrapper>;
 }
