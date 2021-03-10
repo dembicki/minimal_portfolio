@@ -2,7 +2,7 @@
 
 Personal portfolio page which contains the most important information about me.
 
-### Tech stack:
+### 🔥 Tech stack:
 
 - React
 - Styled components
@@ -11,7 +11,7 @@ Personal portfolio page which contains the most important information about me.
 
 Airbnb eslint rules applied.
 
-#### DONE:
+#### ✔️ DONE:
 
 - Create homepage
 - Create experience section
@@ -21,7 +21,7 @@ Airbnb eslint rules applied.
 - Create hamburger menu
 - Move all data/content to json files
 
-#### TODO:
+#### ❌ TODO:
 
 - Create projects section
 - Create project component
