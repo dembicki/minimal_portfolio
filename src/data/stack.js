@@ -9,7 +9,7 @@ const stack = [
   "redux",
   "postgres",
   "gatsby",
-  "wordpress",
+  // "wordpress",
 ];
 
 export default stack;

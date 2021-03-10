@@ -8,6 +8,7 @@ import SectionWrapper from './components/SectionWrapper';
 import TechStack from './components/TechStack';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Arrow from './components/Arrow';
 
 const App = () => (
   <div className="App">
@@ -16,6 +17,7 @@ const App = () => (
       <a href="#contact">contact</a>
       <Menu />
       <Header />
+      <Arrow />
       <SectionWrapper title="Tech stack" minHeight="60vh">
         <TechStack />
       </SectionWrapper>
