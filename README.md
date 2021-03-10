@@ -2,37 +2,21 @@
 
 ## DONE:
 
-### Project structure:
-
 - Create homepage
-
-### Features:
-
-- Create tech-stack component/s
-
-### Mobile:
+- Create experience section
+- Create contact section
+- Create tech-stack component
+- Create timeline component
+- Create hamburger menu
+- Move all data/content to json files
 
 ## TODO:
 
-### Project structure:
-
-- Create experience page
-- Create contact page
-- ???
-
-### Features:
-
-- Create hamburger menu
-- Create slider component
+- Create projects section
+- Create project component
 - Create contact form
 - Make contact form validation
 - Add animations
 - Add mouse hover effect
-- Improvements?
-- Move all data/content to json files
-
-### Mobile:
-
 - improvements for mobile layout
-- fixes for hamburger menu
--
+- ???
