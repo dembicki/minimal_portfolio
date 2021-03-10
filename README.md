@@ -1,6 +1,17 @@
 # minimal_portfolio
 
-## DONE:
+Personal portfolio page which contains the most important information about me.
+
+## Tech stack:
+
+- React
+- Styled components
+- Sass
+- React-chrono
+
+Airbnb eslint rules applied.
+
+### DONE:
 
 - Create homepage
 - Create experience section
@@ -10,7 +21,7 @@
 - Create hamburger menu
 - Move all data/content to json files
 
-## TODO:
+### TODO:
 
 - Create projects section
 - Create project component
