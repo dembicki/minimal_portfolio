@@ -32,12 +32,10 @@ export default function Menu({ size }) {
     display: flex;
     transition: height, width 0.3s ease-in-out;
     &:hover {
-      ${Icon} {
-        path {
-          fill: black;
-        }
-      }
       background-color: white;
+      ${Icon} path {
+        fill: black;
+      }
     }
     ${!open} {
       background-color: white;
