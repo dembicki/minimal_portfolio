@@ -30,4 +30,4 @@ Airbnb eslint rules applied.
 - Add animations
 - Add mouse hover effect
 - improvements for mobile layout
-- ???
+- Implement dark/light mode

@@ -6,11 +6,11 @@ import styled from "styled-components";
 import experience from "../data/experience";
 
 export default function Experience() {
-  const Wrapper = styled.div`
-    padding: 0;
-  `;
+  const Wrapper = styled.div``;
 
-  const CardWrapper = styled.div``;
+  const CardWrapper = styled.div`
+    width: 100%;
+  `;
 
   const JobTitle = styled.h2`
     font-size: 30px;
@@ -32,13 +32,13 @@ export default function Experience() {
       <Chrono
         mode="VERTICAL"
         hideControls
+        scrollable
         theme={{
           primary: "white",
           secondary: "black",
           cardBgColor: "transparent",
         }}
       >
-        {/* TODO: fix elements nasted */}
         {experience.map((item) => (
           <CardWrapper>
             <JobTitle>{item.jobTitle}</JobTitle>
