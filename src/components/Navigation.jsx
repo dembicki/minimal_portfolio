@@ -79,6 +79,7 @@ export default function Menu({ size }) {
   `;
 
   const handleMenuClick = () => setOpen(!open);
+  const closeMenu = () => setOpen(false);
 
   return (
     <Wrapper onClick={handleMenuClick} className="hover">
@@ -86,17 +87,23 @@ export default function Menu({ size }) {
         <Nav>
           <ul>
             <li>
-              <Link to="top" smooth duration={700} offset={-70}>
+              <Link
+                to="top"
+                smooth
+                duration={700}
+                offset={-70}
+                onClick={closeMenu}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="experience" smooth duration={700}>
+              <Link to="experience" smooth duration={700} onClick={closeMenu}>
                 Experience
               </Link>
             </li>
             <li>
-              <Link to="contact" smooth duration={700}>
+              <Link to="contact" smooth duration={700} onClick={closeMenu}>
                 Contact
               </Link>
             </li>

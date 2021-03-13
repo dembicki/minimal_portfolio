@@ -2,14 +2,17 @@ const stack = [
   "react.js",
   "js es6",
   "less/sass",
-  "graphql",
-  "node.js",
-  "typescript",
-  "docker",
+  "styled-components",
   "redux",
+  "html5",
+  "formik",
+  "graphql",
   "postgres",
   "gatsby",
-  // "wordpress",
+  "node.js",
+  "docker",
+  "typescript (basics)",
+  "wordpress"
 ];
 
 export default stack;

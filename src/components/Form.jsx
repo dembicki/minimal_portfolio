@@ -40,8 +40,10 @@ const Button = styled.button`
 `;
 
 const Error = styled.div`
-  color: red;
   padding: 0.5rem;
+  border: 1px solid #f44336;
+  opacity: 0.8;
+  margin-top: 0.5rem; ;
 `;
 
 const Form = () => {
