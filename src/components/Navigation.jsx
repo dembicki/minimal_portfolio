@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link, animateScroll as scroll } from "react-scroll";
 
+// TODO: implement menu closing when click outside of this component
+
 export default function Menu({ size }) {
   const [open, setOpen] = useState(false);
   const menuSize = size || 15;
@@ -26,11 +28,11 @@ export default function Menu({ size }) {
     cursor: pointer;
     border-radius: ${menuSize}rem;
     display: flex;
-    transition: height, width 0.3s ease-in-out;
     &:hover {
       background-color: white;
       ${Icon} path {
         fill: black;
+        transition: fill 0.3s ease-in-out;
       }
     }
     ${!open} {
@@ -76,10 +78,7 @@ export default function Menu({ size }) {
     }
   `;
 
-  // TODO: do component logic
-  const handleMenuClick = () => {
-    setOpen(!open);
-  };
+  const handleMenuClick = () => setOpen(!open);
 
   return (
     <Wrapper onClick={handleMenuClick} className="hover">

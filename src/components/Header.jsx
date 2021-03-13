@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import me from "../assets/me.png";
 import user from "../data/user";
 
 const Wrapper = styled.header`
@@ -19,10 +19,28 @@ const Description = styled.p`
   font-size: 1.4rem;
   text-align: left;
   line-height: 2.1rem;
-  max-width: 60%;
+  flex: 2;
   span {
     color: #0277bd;
   }
+`;
+
+const InnerWrapper = styled.div`
+  display: flex;
+  max-width: 1050px;
+  /* border: 1px solid red; */
+`;
+
+const Avatar = styled.img`
+  border: 1px solid white;
+  padding: 0.5rem;
+  background-color: black;
+  flex: 0.5;
+  height: auto;
+  width: 100%;
+  height: 100%;
+  align-self: top;
+  margin-left: 2rem;
 `;
 
 const Link = styled.a`
@@ -35,16 +53,19 @@ export default function Header() {
       <Heading>
         {user.firstName} {user.lastName}
       </Heading>
-      <Description>
-        {user.position} currently working at {user.currentCompany}. <br />
-        {user.description}
-        <br />
-        <br />
-        If you have any questions please{" "}
-        <Link href="#contact">
-          <span>contact me.</span>
-        </Link>
-      </Description>
+      <InnerWrapper>
+        <Description>
+          {user.position} currently working at {user.currentCompany}. <br />
+          {user.description}
+          <br />
+          <br />
+          If you have any questions please{" "}
+          <Link href="#contact">
+            <span>contact me.</span>
+          </Link>
+        </Description>
+        <Avatar src={me} />
+      </InnerWrapper>
     </Wrapper>
   );
 }
