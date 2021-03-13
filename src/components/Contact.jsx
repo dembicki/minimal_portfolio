@@ -4,6 +4,10 @@ import styled from "styled-components";
 import user from "../data/user";
 import Form from "./Form";
 
+const Wrapper = styled.div`
+  padding: 0 2rem; ;
+`;
+
 const Description = styled.p`
   margin: 3rem 0;
   font-size: 1.4rem;
@@ -22,7 +26,7 @@ const Link = styled.a`
 export default function Contact() {
   const linkedIn = user.links.filter((o) => o.name === "linkedin")[0];
   return (
-    <div>
+    <Wrapper>
       <Description>
         I’m open to contact for job offer or project offers. I’m looking for
         creative projects to take part in. Don’t be shy to contact my through my
@@ -32,6 +36,6 @@ export default function Contact() {
         </Link>
       </Description>
       <Form />
-    </div>
+    </Wrapper>
   );
 }
