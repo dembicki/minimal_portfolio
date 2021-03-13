@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
 import styled from "styled-components";
 
 import user from "../data/user";
+import Form from "./Form";
 
 export default function Contact() {
   const Description = styled.p`
@@ -31,12 +33,7 @@ export default function Contact() {
           <span>{linkedIn.name}.</span>
         </Link>
       </Description>
-      {/* <form>
-        <input type="text" />
-        <input type="text" />
-        <input type="textarea" />
-        <button type="submit">send</button>
-      </form> */}
+      <Form />
     </div>
   );
 }

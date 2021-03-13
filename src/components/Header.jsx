@@ -25,6 +25,10 @@ const Description = styled.p`
   }
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+`;
+
 export default function Header() {
   return (
     <Wrapper>
@@ -36,7 +40,10 @@ export default function Header() {
         {user.description}
         <br />
         <br />
-        If you have any questions please <span>contact me.</span>
+        If you have any questions please{" "}
+        <Link href="#contact">
+          <span>contact me.</span>
+        </Link>
       </Description>
     </Wrapper>
   );
