@@ -1,28 +1,26 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
 import styled from "styled-components";
-
 import user from "../data/user";
 import Form from "./Form";
 
+const Description = styled.p`
+  margin: 3rem 0;
+  font-size: 1.4rem;
+  text-align: left;
+  line-height: 2.1rem;
+  max-width: 60%;
+  span {
+    color: #0277bd;
+  }
+`;
+
+const Link = styled.a`
+  text-decoration: none;
+`;
+
 export default function Contact() {
-  const Description = styled.p`
-    margin: 3rem 0;
-    font-size: 1.4rem;
-    text-align: left;
-    line-height: 2.1rem;
-    max-width: 60%;
-    span {
-      color: #0277bd;
-    }
-  `;
-
-  const Link = styled.a`
-    text-decoration: none;
-  `;
-
   const linkedIn = user.links.filter((o) => o.name === "linkedin")[0];
-
   return (
     <div>
       <Description>

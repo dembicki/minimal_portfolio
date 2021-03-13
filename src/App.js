@@ -8,7 +8,7 @@ import SectionWrapper from './components/SectionWrapper';
 import TechStack from './components/TechStack';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import Arrow from './components/Arrow';
+// import Arrow from './components/Arrow';
 
 const App = () => (
   <div className="App">

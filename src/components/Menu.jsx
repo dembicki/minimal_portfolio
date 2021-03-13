@@ -6,10 +6,6 @@ export default function Menu({ size }) {
   const [open, setOpen] = useState(false);
   const menuSize = size || 15;
 
-  // const incSize = () => {
-  //   menuSize = menuSize;
-  // };
-
   const Icon = styled.svg`
     display: block;
     position: fixed;
