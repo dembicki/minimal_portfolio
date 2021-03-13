@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import menuIconWhite from "../assets/menuIconWhite.svg";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Menu({ size }) {
   const [open, setOpen] = useState(false);
@@ -86,17 +86,21 @@ export default function Menu({ size }) {
       {open && (
         <Nav>
           <ul>
-            <a href="#top">
-              <li>Home</li>
-            </a>
-
-            <a href="#experience">
-              <li>Experience</li>
-            </a>
-
-            <a href="#contact">
-              <li>Contact</li>
-            </a>
+            <li>
+              <Link to="top" smooth duration={700} offset={-70}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="experience" smooth duration={700}>
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" smooth duration={700}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </Nav>
       )}

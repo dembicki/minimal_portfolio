@@ -3,7 +3,7 @@ import React from 'react';
 import './App.scss';
 import MainWrapper from './components/MainWrapper';
 import Header from './components/Header';
-import Menu from './components/Menu';
+import Navigation from './components/Navigation';
 import SectionWrapper from './components/SectionWrapper';
 import TechStack from './components/TechStack';
 import Experience from './components/Experience';
@@ -14,7 +14,7 @@ import Projects from './components/Projects';
 const App = () => (
   <div className="App">
     <MainWrapper id="top">
-      <Menu />
+      <Navigation />
       <Header />
       {/* <Arrow /> */}
       <SectionWrapper title="Tech stack" minHeight="60vh">
