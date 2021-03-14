@@ -8,6 +8,8 @@ Personal portfolio page which contains the most important information about me.
 - Styled components
 - Sass
 - React-chrono
+- Formik
+- Yup
 
 Airbnb eslint rules applied.
 
@@ -19,15 +21,20 @@ Airbnb eslint rules applied.
 - Create tech-stack component
 - Create timeline component
 - Create hamburger menu
+- Create contact form
+- Make contact form validation
+- Create projects section
 - Move all data/content to json files
+- Implement formik
+- Add smooth scrolling
 
 #### ❌ TODO:
 
-- Create projects section
 - Create project component
-- Create contact form
-- Make contact form validation
-- Add animations
+- Add fade animations for elements in viewport
 - Add mouse hover effect
-- improvements for mobile layout
+- Improvements for mobile layout
 - Implement dark/light mode
+- Performance improvements
+- SEO 
+- Deploy
