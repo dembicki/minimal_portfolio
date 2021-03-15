@@ -7,12 +7,12 @@ const stack = [
   "html5",
   "formik",
   "graphql",
-  "postgres",
+  "postgreSQL",
   "gatsby",
   "node.js",
   "docker",
   "typescript (basics)",
-  "wordpress"
+  "wordpress",
 ];
 
 export default stack;
