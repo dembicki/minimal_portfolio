@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import styled from "styled-components";
 import me from "../assets/me.png";
 import user from "../data/user";
@@ -43,9 +44,9 @@ const Avatar = styled.img`
   margin-left: 2rem;
 `;
 
-const Link = styled.a`
-  text-decoration: none;
-`;
+// const Link = styled.a`
+//   text-decoration: none;
+// `;
 
 export default function Header() {
   return (
@@ -60,9 +61,11 @@ export default function Header() {
           <br />
           <br />
           If you have any questions please{" "}
-          <Link href="#contact">
-            <span>contact me.</span>
-          </Link>
+          <span>
+            <Link to="contact" smooth duration={700}>
+              contact me.
+            </Link>
+          </span>
         </Description>
         <Avatar src={me} />
       </InnerWrapper>

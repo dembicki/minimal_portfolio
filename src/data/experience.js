@@ -37,6 +37,27 @@ const experience = [
       "Full Remote Work",
     ],
   },
+  {
+    jobTitle: "Practicum Student",
+    companyName: "Virtual Services, May 2016 - June 2016",
+    Description: [
+      "Work on creating shop with custom CMS",
+      "Work in small teams",
+      "Learning PHP",
+      "Software Testing",
+      "Bug fixes",
+      "Creating pure websites based on .psd layout",
+    ],
+  },
+  {
+    jobTitle: "Freelance Graphic Designer / Developer",
+    companyName: "Jan 2016 - Jan 2019",
+    Description: [
+      "Personal branding, any kind of graphic design for print",
+      "Creating websites based on Wordpress",
+      "Creating static landing pages for small clients",
+    ],
+  },
 ];
 
 export default experience;
