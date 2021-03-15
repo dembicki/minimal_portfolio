@@ -1,6 +1,6 @@
 const stack = [
   "react.js",
-  "js es6",
+  "js (es6)",
   "less/sass",
   "styled-components",
   "redux",

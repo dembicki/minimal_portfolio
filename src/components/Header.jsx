@@ -44,9 +44,10 @@ const Avatar = styled.img`
   margin-left: 2rem;
 `;
 
-// const Link = styled.a`
-//   text-decoration: none;
-// `;
+const ContactLink = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+`;
 
 export default function Header() {
   return (
@@ -62,9 +63,9 @@ export default function Header() {
           <br />
           If you have any questions please{" "}
           <span>
-            <Link to="contact" smooth duration={700}>
+            <ContactLink to="contact" smooth duration={700}>
               contact me.
-            </Link>
+            </ContactLink>
           </span>
         </Description>
         <Avatar src={me} />
