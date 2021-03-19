@@ -43,13 +43,13 @@ export default function Experience() {
           cardBgColor: "transparent",
         }}
       >
-        {experience.map((item) => (
-          <CardWrapper>
-            <JobTitle>{item.jobTitle}</JobTitle>
-            <CompanyName>{item.companyName}</CompanyName>
+        {experience.map(({ id, jobTitle, companyName, description }) => (
+          <CardWrapper key={id}>
+            <JobTitle>{jobTitle}</JobTitle>
+            <CompanyName>{companyName}</CompanyName>
             <Description>
-              {item.Description.map((bullet, index) => (
-                <li>{bullet}</li>
+              {description.map(({ itemId, item }) => (
+                <li key={itemId}>{item}</li>
               ))}
             </Description>
           </CardWrapper>
