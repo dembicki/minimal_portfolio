@@ -24,7 +24,7 @@ export default function Contact() {
           <h1>Contact info:</h1>
           <Button
             type="button"
-            onClick={() => setIsDetailsOpen(!isDetailsOpen)}
+            onClick={() => setIsDetailsOpen((state) => !state)}
           >
             {!isDetailsOpen ? "Show personal details" : "Hide personal details"}
           </Button>

@@ -78,11 +78,11 @@ export default function Navigation({ size }) {
     }
   `;
 
-  const handleMenuClick = () => setOpen(!open);
+  const handleToggleMenu = () => setOpen((state) => !state);
   const closeMenu = () => setOpen(false);
 
   return (
-    <Wrapper onClick={handleMenuClick} className="hover">
+    <Wrapper onClick={handleToggleMenu} className="hover">
       {open && (
         <Nav>
           <ul>
