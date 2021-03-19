@@ -4,7 +4,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 // TODO: implement menu closing when click outside of this component
 
-export default function Menu({ size }) {
+export default function Navigation({ size }) {
   const [open, setOpen] = useState(false);
   const menuSize = size || 15;
 

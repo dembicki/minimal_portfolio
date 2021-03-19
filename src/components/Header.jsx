@@ -57,7 +57,8 @@ export default function Header() {
       </Heading>
       <InnerWrapper>
         <Description>
-          {user.position} currently working at {user.currentCompany}. <br />
+          {user.position} currently working at{" "}
+          <span>{user.currentCompany}.</span> <br />
           {user.description}
           <br />
           <br />
