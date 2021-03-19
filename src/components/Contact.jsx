@@ -29,11 +29,11 @@ export default function Contact() {
             {!isDetailsOpen ? "Show personal details" : "Hide personal details"}
           </Button>
           {isDetailsOpen && (
-            <div>
+            <InnerDetails>
               <p>email: nikeid1235@gmail.com</p>
               <p>tel: +48 792321813</p>
               <p>language: english/polish</p>
-            </div>
+            </InnerDetails>
           )}
         </Details>
       </InnerWrapper>
@@ -56,6 +56,11 @@ const Details = styled.div`
   border: 1px solid white;
   background-color: black;
   margin: 1rem 2rem;
+`;
+
+const InnerDetails = styled.div`
+  text-align: left;
+  padding: 0 3rem;
 `;
 
 const Button = styled.button`
