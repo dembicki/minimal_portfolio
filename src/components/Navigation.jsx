@@ -37,11 +37,11 @@ export default function Navigation({ size }) {
     }
     ${!open} {
       background-color: white;
-      height: ${menuSize * 3}rem;
-      width: ${menuSize * 3}rem;
+      height: ${menuSize * 3.2}rem;
+      width: ${menuSize * 3.2}rem;
       border-radius: ${menuSize * 3}rem;
-      right: -8rem;
-      top: -8rem;
+      right: -10rem;
+      top: -10rem;
       ${Icon} {
         path {
           fill: black;
@@ -58,7 +58,8 @@ export default function Navigation({ size }) {
     color: red;
     display: flex;
     align-self: center;
-    margin-left: 6rem;
+    margin-left: 7rem;
+    margin-top: 4rem;
     ul {
       transition: all 0.2s ease-in-out;
       list-style-type: none;
@@ -105,6 +106,11 @@ export default function Navigation({ size }) {
             <li>
               <Link to="experience" smooth duration={700} onClick={closeMenu}>
                 Experience
+              </Link>
+            </li>
+            <li>
+              <Link to="inspirations" smooth duration={700} onClick={closeMenu}>
+                Inspirations
               </Link>
             </li>
             <li>

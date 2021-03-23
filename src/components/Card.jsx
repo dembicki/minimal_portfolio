@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function ProjectCard({ title, description, url }) {
+export default function Card({ title, description, url, img }) {
   return (
     <Link href={url} target="_blank" noreferrer type="link">
       <Wrapper>
@@ -13,8 +13,8 @@ export default function ProjectCard({ title, description, url }) {
 }
 
 const Wrapper = styled.div`
-  width: 600px;
-  height: 180px;
+  width: 500px;
+  height: 250px;
   border: 1px solid white;
   background-color: black;
   padding: 1.5rem;
@@ -23,6 +23,7 @@ const Wrapper = styled.div`
 const ProjectTitle = styled.h1``;
 const ProjectDescription = styled.p`
   margin: 2rem;
+  font-size: 1.2rem;
 `;
 
 const Link = styled.a`
