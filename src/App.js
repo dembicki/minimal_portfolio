@@ -20,12 +20,12 @@ const App = () => (
       <SectionWrapper title="Tech stack" minHeight="60vh">
         <TechStack />
       </SectionWrapper>
+      <SectionWrapper title="Projects" id="projects">
+        <Projects />
+      </SectionWrapper>
       <SectionWrapper title="Experience" id="experience">
         <Experience />
       </SectionWrapper>
-      {/* <SectionWrapper title="Projects" id="projects">
-        <Projects />
-      </SectionWrapper> */}
       <SectionWrapper title="Contact" id="contact">
         <Contact />
       </SectionWrapper>

@@ -98,6 +98,11 @@ export default function Navigation({ size }) {
               </Link>
             </li>
             <li>
+              <Link to="projects" smooth duration={700} onClick={closeMenu}>
+                Projects
+              </Link>
+            </li>
+            <li>
               <Link to="experience" smooth duration={700} onClick={closeMenu}>
                 Experience
               </Link>
