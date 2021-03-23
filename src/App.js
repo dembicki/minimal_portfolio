@@ -9,6 +9,7 @@ import TechStack from './components/TechStack';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 // import Arrow from './components/Arrow';
 
 const App = () => (
@@ -30,6 +31,7 @@ const App = () => (
         <Contact />
       </SectionWrapper>
     </MainWrapper>
+    <Footer />
   </div>
 );
 
