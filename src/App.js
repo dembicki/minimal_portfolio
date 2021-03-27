@@ -11,7 +11,6 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Inspirations from './components/Inspirations';
-// import Arrow from './components/Arrow';
 
 const App = () => (
   <div className="App">
