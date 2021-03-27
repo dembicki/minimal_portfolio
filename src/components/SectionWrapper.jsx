@@ -1,16 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import InView, { useInView } from "react-intersection-observer";
+import { motion, useMotionValue } from "framer-motion";
 import styled from "styled-components";
 
 export default function SectionWrapper({ children, title, id }) {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
+  const [animation, setAnimation] = useState({
+    opacity: 0,
+    y: -50,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setAnimation({
+        opacity: 1,
+        y: 0,
+      });
+    }
+  }, [inView]);
+
   return (
-    <Wrapper id={id}>
+    <Wrapper
+      ref={ref}
+      id={id}
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: animation.opacity, y: animation.y }}
+      transition={{ ease: "easeOut", duration: 1.1, delay: 0.5 }}
+    >
       <Heading>{`${title}:`}</Heading>
       {children}
     </Wrapper>
   );
 }
 
-const Wrapper = styled.section`
+const Wrapper = styled(motion.div)`
   padding-top: 2rem;
   max-width: 1200px;
   min-height: 80vh;

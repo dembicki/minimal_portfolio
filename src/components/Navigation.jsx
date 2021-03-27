@@ -1,89 +1,25 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 import styled from "styled-components";
-import { Link, animateScroll as scroll } from "react-scroll";
-
-// TODO: implement menu closing when click outside of this component
 
 export default function Navigation({ size }) {
   const [open, setOpen] = useState(false);
   const menuSize = size || 15;
 
-  const Icon = styled.svg`
-    display: block;
-    position: fixed;
-    top: 3rem;
-    right: 3rem;
-    margin: auto;
-    width: 40px;
-    height: 33px;
-  `;
-
-  const Wrapper = styled.div`
-    position: fixed;
-    z-index: 3;
-    right: -4rem;
-    top: -4rem;
-    height: ${menuSize}rem;
-    width: ${menuSize}rem;
-    cursor: pointer;
-    border-radius: ${menuSize}rem;
-    display: flex;
-    &:hover {
-      background-color: white;
-      ${Icon} path {
-        fill: black;
-        transition: fill 0.3s ease-in-out;
-      }
-    }
-    ${!open} {
-      background-color: white;
-      height: ${menuSize * 3.2}rem;
-      width: ${menuSize * 3.2}rem;
-      border-radius: ${menuSize * 3}rem;
-      right: -10rem;
-      top: -10rem;
-      ${Icon} {
-        path {
-          fill: black;
-        }
-      }
-    }
-  `;
-
-  const Nav = styled.nav`
-    font-size: 3.5rem;
-    text-align: left;
-    letter-spacing: 0.2rem;
-    line-height: 5rem;
-    color: red;
-    display: flex;
-    align-self: center;
-    margin-left: 7rem;
-    margin-top: 4rem;
-    ul {
-      transition: all 0.2s ease-in-out;
-      list-style-type: none;
-      &:hover {
-        transform: skewY(5deg);
-      }
-      a {
-        padding: 0.5rem;
-        text-decoration: none;
-        display: block;
-        color: black;
-        &:hover {
-          background-color: black;
-          color: white;
-        }
-      }
-    }
-  `;
-
   const handleToggleMenu = () => setOpen((state) => !state);
   const closeMenu = () => setOpen(false);
 
   return (
-    <Wrapper onClick={handleToggleMenu} className="hover">
+    <Wrapper
+      onClick={handleToggleMenu}
+      className="hover"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ ease: "easeOut", duration: 2 }}
+      menuSize={menuSize}
+      open={open}
+    >
       {open && (
         <Nav>
           <ul>
@@ -138,3 +74,74 @@ export default function Navigation({ size }) {
     </Wrapper>
   );
 }
+
+const Icon = styled.svg`
+  display: block;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  margin: auto;
+  width: 40px;
+  height: 33px;
+`;
+
+const Wrapper = styled(motion.div)`
+  position: fixed;
+  z-index: 3;
+  right: -4rem;
+  top: -4rem;
+  height: ${(props) => props.menuSize}rem;
+  width: ${(props) => props.menuSize}rem;
+  cursor: pointer;
+  border-radius: ${(props) => props.menuSize}rem;
+  display: flex;
+  &:hover {
+    background-color: white;
+    ${Icon} path {
+      fill: black;
+      transition: fill 0.3s ease-in-out;
+    }
+  }
+  ${(props) => !props.open} {
+    background-color: white;
+    height: ${(props) => props.menuSize * 3.2}rem;
+    width: ${(props) => props.menuSize * 3.2}rem;
+    border-radius: ${(props) => props.menuSize * 3}rem;
+    right: -10rem;
+    top: -10rem;
+    ${Icon} {
+      path {
+        fill: black;
+      }
+    }
+  }
+`;
+
+const Nav = styled.nav`
+  font-size: 3.5rem;
+  text-align: left;
+  letter-spacing: 0.2rem;
+  line-height: 5rem;
+  color: red;
+  display: flex;
+  align-self: center;
+  margin-left: 7rem;
+  margin-top: 4rem;
+  ul {
+    transition: all 0.2s ease-in-out;
+    list-style-type: none;
+    &:hover {
+      transform: skewY(5deg);
+    }
+    a {
+      padding: 0.5rem;
+      text-decoration: none;
+      display: block;
+      color: black;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+`;

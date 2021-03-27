@@ -1,10 +1,42 @@
 import React from "react";
+
 import { Link, animateScroll as scroll } from "react-scroll";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import me from "../assets/me.png";
 import user from "../data/user";
 
-const Wrapper = styled.header`
+export default function Header() {
+  return (
+    <Wrapper
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ ease: "easeOut", duration: 2 }}
+    >
+      <Heading>
+        {user.firstName} {user.lastName}
+      </Heading>
+      <InnerWrapper>
+        <Description>
+          {user.position} currently working at{" "}
+          <span>{user.currentCompany}.</span> <br />
+          {user.description}
+          <br />
+          <br />
+          If you have any questions please{" "}
+          <span>
+            <ContactLink to="contact" smooth duration={700}>
+              contact me.
+            </ContactLink>
+          </span>
+        </Description>
+        <Avatar src={me} />
+      </InnerWrapper>
+    </Wrapper>
+  );
+}
+
+const Wrapper = styled(motion.div)`
   margin: 0;
   margin-bottom: 2rem;
 `;
@@ -33,9 +65,7 @@ const InnerWrapper = styled.div`
 `;
 
 const Avatar = styled.img`
-  border: 1px solid white;
   padding: 0.5rem;
-  background-color: black;
   flex: 0.5;
   height: auto;
   width: 100%;
@@ -48,29 +78,3 @@ const ContactLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
 `;
-
-export default function Header() {
-  return (
-    <Wrapper>
-      <Heading>
-        {user.firstName} {user.lastName}
-      </Heading>
-      <InnerWrapper>
-        <Description>
-          {user.position} currently working at{" "}
-          <span>{user.currentCompany}.</span> <br />
-          {user.description}
-          <br />
-          <br />
-          If you have any questions please{" "}
-          <span>
-            <ContactLink to="contact" smooth duration={700}>
-              contact me.
-            </ContactLink>
-          </span>
-        </Description>
-        <Avatar src={me} />
-      </InnerWrapper>
-    </Wrapper>
-  );
-}

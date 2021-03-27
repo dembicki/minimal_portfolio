@@ -17,7 +17,6 @@ const App = () => (
     <MainWrapper id="top">
       <Navigation />
       <Header />
-      {/* <Arrow /> */}
       <SectionWrapper title="Tech stack" minHeight="60vh">
         <TechStack />
       </SectionWrapper>
