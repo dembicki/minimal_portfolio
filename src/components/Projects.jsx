@@ -6,8 +6,8 @@ import projects from "../data/projects";
 export default function Projects() {
   return (
     <Wrapper>
-      {projects?.map(({ name, description, url }) => (
-        <Card title={name} description={description} url={url} />
+      {projects?.map(({ id, name, description, url }) => (
+        <Card key={id} title={name} description={description} url={url} />
       ))}
     </Wrapper>
   );

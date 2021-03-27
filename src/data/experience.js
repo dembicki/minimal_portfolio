@@ -5,18 +5,23 @@ const experience = [
     companyName: "LPN PLANT, March 2020 - Present",
     description: [
       {
+        itemId: 0,
         item: "Developing dashboard for wireless managing outdoor lights installations using React, PostgreSQL, GraphQL, Ant Design, Nodejs with schedule planning integration and data analytics.",
       },
       {
+        itemId: 1,
         item: "Developing dashboard for IoT data analytics using Cube.js, React, GraphQL, Nodejs",
       },
       {
+        itemId: 2,
         item: "Rebranding existing client’s landing pages",
       },
       {
+        itemId: 3,
         item: "Doing researches for potential project tech stack based on customer needs",
       },
       {
+        itemId: 4,
         item: "Managing small web development team for some time.",
       }
     ],

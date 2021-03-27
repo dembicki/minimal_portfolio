@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import me from "../assets/me.png";
@@ -45,6 +45,9 @@ const Heading = styled.h1`
   font-size: 3.7rem;
   text-align: left;
   margin: 0;
+  @media (max-width: 900px) {
+    margin: 1rem;
+  }
 `;
 
 const Description = styled.p`
@@ -62,6 +65,12 @@ const InnerWrapper = styled.div`
   display: flex;
   max-width: 1050px;
   /* border: 1px solid red; */
+  @media (max-width: 900px) {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
 `;
 
 const Avatar = styled.img`
@@ -72,6 +81,9 @@ const Avatar = styled.img`
   height: 100%;
   align-self: top;
   margin-left: 2rem;
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 const ContactLink = styled(Link)`

@@ -3,49 +3,6 @@ import styled from "styled-components";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-const CustomForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-`;
-
-const Input = styled.input`
-  font-size: 1.1rem;
-  border: 1px solid white;
-  background-color: black;
-  color: white;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-`;
-
-const Textarea = styled.textarea`
-  font-size: 1.1rem;
-  border: 1px solid white;
-  height: 250px;
-  background-color: black;
-  color: white;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-`;
-
-const Button = styled.button`
-  font-size: 1.2rem;
-  font-weight: bolder;
-  border: 1px solid white;
-  background-color: black;
-  color: white;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-  cursor: pointer;
-`;
-
-const Error = styled.div`
-  padding: 0.5rem;
-  border: 1px solid #f44336;
-  opacity: 0.8;
-  margin-top: 0.5rem; ;
-`;
-
 const Form = () => {
   const {
     handleSubmit,
@@ -136,3 +93,46 @@ const Form = () => {
 };
 
 export default Form;
+
+const CustomForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+`;
+
+const Input = styled.input`
+  font-size: 1.1rem;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+`;
+
+const Textarea = styled.textarea`
+  font-size: 1.1rem;
+  border: 1px solid white;
+  height: 250px;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+`;
+
+const Button = styled.button`
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+`;
+
+const Error = styled.div`
+  padding: 0.5rem;
+  border: 1px solid #f44336;
+  opacity: 0.8;
+  margin-top: 0.5rem; ;
+`;

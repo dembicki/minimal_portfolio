@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export default function MainWrapper({ children, id }) {
@@ -8,6 +7,11 @@ export default function MainWrapper({ children, id }) {
 
 const Wrapper = styled.main`
   margin: 4rem 6rem 4rem 6rem;
-  //TODO: fix this &darr;
   height: calc(100vh-padding);
+
+  @media screen and (max-width: 800px) {
+    border: 1px solid red;
+    margin: 0;
+    max-width: 100%;
+  }
 `;

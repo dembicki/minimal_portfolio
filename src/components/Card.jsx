@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Card({ title, description, url, img }) {
+export default function Card({ title, description, url }) {
   return (
     <Link href={url} target="_blank" noreferrer type="link">
       <Wrapper>

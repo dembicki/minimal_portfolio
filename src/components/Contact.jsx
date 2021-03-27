@@ -20,7 +20,7 @@ export default function Contact() {
       </Description>
       <InnerWrapper>
         <Form />
-        <Details>
+        {/* <Details>
           <h1>Contact info:</h1>
           <Button
             type="button"
@@ -35,7 +35,7 @@ export default function Contact() {
               <p>language: english/polish</p>
             </InnerDetails>
           )}
-        </Details>
+        </Details> */}
       </InnerWrapper>
     </Wrapper>
   );

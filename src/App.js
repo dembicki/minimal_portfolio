@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 import Inspirations from './components/Inspirations';
 
 const App = () => (
-  <div className="App">
+  <>
     <MainWrapper id="top">
       <Navigation />
       <Header />
@@ -34,7 +34,7 @@ const App = () => (
       </SectionWrapper>
     </MainWrapper>
     <Footer />
-  </div>
+  </>
 );
 
 export default App;
